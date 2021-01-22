@@ -2,9 +2,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Movie = (props) => (
+const Movie = ({ movie }) => (
   <div>
-    <h3>{props.movie.title}</h3>
+    <h3>{movie.title}</h3>
   </div>
 );
 
