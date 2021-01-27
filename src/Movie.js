@@ -20,6 +20,6 @@ Movie.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string.isRequired,
     poster_path: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
   }).isRequired,
 };
