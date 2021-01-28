@@ -36,7 +36,11 @@ class MovieDetails extends Component {
           </Overdrive>
           <div>
             <h1>{movie.title}</h1>
-            <h3>{movie.release_date}</h3>
+            {movie.release_date ? (
+              <h3>{movie.release_date}</h3>
+            ) : (
+              <h3>Release Year Unavailble</h3>
+            )}
             <p>{movie.overview}</p>
           </div>
         </MovieInfo>
